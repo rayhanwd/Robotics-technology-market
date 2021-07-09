@@ -47,7 +47,7 @@ const CartReducer = (state = initState, action) => {
           const TotalQuantities = parseFloat(state.totalQuantities)-1;
            return {
                ...state,
-               totalPrice:Math.round(TotalPrice).toFixed(2) , totalQuantities: TotalQuantities
+               totalPrice:TotalPrice.toFixed(2) , totalQuantities: TotalQuantities
            }
         } else {
             return state;
